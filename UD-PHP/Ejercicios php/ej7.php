@@ -10,15 +10,15 @@ Si no ERROR.
 */
 
 $nota = 5;
-if($nota <=1 && < 4,9) {
+if($nota >= 1 && $nota <= 4.9) {
     echo ("Suspenso");
-}elseif ($nota >=5 && <= 5,9) {
+}elseif ($nota >=5 && $nota<= 5.9) {
     echo ("Suficiente");
-}elseif ($nota >=6 && <= 6,9) {
+}elseif ($nota >=6 && $nota<= 6.9) {
     echo ("Bien");
-}elseif ($nota >=7 && <= 8,9) {
+}elseif ($nota >=7 && $nota<= 8.9) {
     echo ("Muy bien");
-}elseif ($nota >=) {
-    # code...
+}elseif ($nota>=9 && $nota<= 10) {
+    echo ("Sobresaliente");
 }
 ?>
