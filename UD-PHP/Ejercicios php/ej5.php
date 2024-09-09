@@ -9,6 +9,7 @@ if($variable1 % 2 == 0) {
 }else{
     echo ("Variable 1 Es inpar <br>");
 }
+
 if($variable2 % 2 == 0) {
     echo ("Variable 2 Es par");
 }else{
