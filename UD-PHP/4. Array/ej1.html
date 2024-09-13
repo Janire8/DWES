@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link src ="ej1.php">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>DNI</td>
+        </tr>
+        <?php foreach ($datosPersona as $element): ?>
+        <tr>
+            <td><?=$element['Nombre']</td>
+            <td><?=$element['Apellido']</td>
+            <td><?=$element['DNI']</td>
+        </tr>
+        <?php endforeach;?>
+    </table>
+</body>
+</html>
