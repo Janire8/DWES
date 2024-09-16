@@ -9,7 +9,7 @@ for ($i=0; $i < 10; $i++) {
 };
 
 
-$menor = 0;
+$menor = 150;
 
 for ($i=0; $i < count($num); $i++) { 
     if ($num[$i] < $menor) {
