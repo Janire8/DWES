@@ -1,11 +1,9 @@
 <?php 
-$numLineas = 0;
 $letras = "";
-$numLineas = $_GET['numero de lineas'];
+$numLineas = $_GET['lineas'];
 
-for ($i = 0; $i < 10; $i++) {
+for ($i = 0; $i < $numLineas; $i++) {
     $letras.="o";
     echo $letras . "<br>";
 }
-echo $_GET["NUMERO DE LINEAS"]; 
 ?>
