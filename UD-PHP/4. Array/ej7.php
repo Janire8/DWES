@@ -8,11 +8,24 @@ $media = 0;
 for ($i=0; $i < 10; $i++) { 
     $num[$i]=rand(1,200);
 };
-
-
-var_dump($num);
+echo("Array num mostrando los índices");echo("<br>");
+print_r($num);
 echo("<br>");
-$num2 = array_reverse($num);
+
+echo("Array num sin mostrar los índices");echo("<br>");
+foreach ($num as $valores) {
+    echo $valores . " ";
+}
 echo("<br>");
-var_dump($num2);
+
+echo("Array num invertido mostrando los índices");echo("<br>");
+$num_invertido = array_reverse($num);
+var_dump($num_invertido);
+echo("<br>");
+
+echo("Array num invertido sin mostrar los índices");
+echo("<br>");
+foreach ($num_invertido as $valor) {
+    echo $valor . " ";
+}
 ?>

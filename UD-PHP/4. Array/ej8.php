@@ -1,37 +1,35 @@
-<?php 
+<?php
+$personas = [
+    [
+        "nombre" => "Janire",
+        "apellido" => "Cruz",
+        "DNI" => "12345678A"
+    ],
+    [
+        "nombre" => "Jon",
+        "apellido" => "Stanton",
+        "DNI" => "87654321B"
+    ]
+];
 
-    $usuarios = array(
+echo "
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>DNI</th>
+        </tr>
+   
+";
 
-        $usuario1 = array("Nombre" => "joseba", 
-        "Apellido" => "garcia", 
-        "DNI"=>"12345678A"),
+for ($i = 0; $i < count($personas); $i++) {
+    echo "<tr>";
+    echo "<td>" . $personas[$i]["nombre"] . "</td>";
+    echo "<td>" . $personas[$i]["apellido"] . "</td>";
+    echo "<td>" . $personas[$i]["DNI"] . "</td>";
+    echo "</tr>";
+}
 
-        $usuario2 = array("Nombre" => "ana", 
-        "Apellido" => "lopez", 
-        "DNI"=>"12345678B")
-    );
-
-    echo (
-        "<table>
-            <tr>
-                <th>Nombre</th>
-                <th>Apellido</th>
-                <th>DNI</th>
-            </tr>
-            <tr>"
-    );
-    for ($i = 0; $i < count($usuario1); $i++) {
-        echo ("<td>" . $usuario1[$i] . "</td>");
-    };
-    
-    echo ("</tr>
-    <tr>");
-    for ($i = 0; $i < count($usuario2); $i++) {
-        echo ("<td>" . $usuario2[$i] . "</td>");
-    };
-    
-    echo ("</tr>
-    <tr>");
-        
-    
+echo ("</tr>
+<tr>");
 ?>
