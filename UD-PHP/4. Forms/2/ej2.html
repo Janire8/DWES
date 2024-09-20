@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link src="ej2.php">
+</head>
+<body>
+    <form action = "ej2.php" method = "post">
+        <h1>Datos personales (Formulario)</h1>
+        <table>
+    
+            <h4>Formulario</h4>
+
+            <h4>Escriba los datos siguientes</h4>
+            <label for = "nombres">Nombre:</label>
+            Nombre: <input type = "text" name ="nombre" value="janire"><br>
+
+            <label for = "apellidos">Apellidos:</label>
+            Apellido: <input type = "text" name ="apellido"><br>
+
+            <label for = "edad">Edad:</label>
+            <select name="edad" id="edad">
+                <option value="25">25</option>
+                <option value="27">27</option>
+                <option value="30">30</option>
+            </select>
+            <br>
+
+            <label for = "peso">Peso:</label>
+            <input type = "text" name ="peso"><br>
+             
+            <!-- CHECKBOX SEXO-->
+            <label for="sexo">Sexo</label><br>
+
+            <input type="radio" id="sexo" name="sexo" value="hombre">
+            <label for="hombre">Hombre</label><br>
+
+            <input type="radio" id="sexo" name="sexo" value="mujer">
+            <label for="mujer">Mujer</label><br>
+
+            <!-- CHECKBOX ESTADO CIVIL -->
+            <label for="estadoCivil">Estado civil</label><br>
+
+            <input type="radio" id="estado" name="estado" value="soltero">
+            <label for="soltero">Soltero</label><br>
+
+            <input type="radio" id="estado" name="estado" value="casado">
+            <label for="casado">Casado</label><br>
+            
+            <input type="radio" id="estado" name="estado" value="otro">
+            <label for="otro">Otro</label><br>
+            
+            <!-- AFICIONES -->
+            <label for="aficiones">Aficiones: </label><br>
+
+            <input type="checkbox" id="aficiones" name="aficiones" value="cine">
+            <label for="cine">Cine</label><br>
+
+            <input type="checkbox" id="aficiones" name="aficiones" value="literatura">
+            <label for="literatura">Literatura</label><br>
+
+            <input type="checkbox" id="aficiones" name="aficiones" value="tebeos">
+            <label for="tebeos">Tebeos</label><br>
+
+            <input type="checkbox" id="aficiones" name="aficiones" value="deporte">
+            <label for="deporte">Deporte</label><br>
+
+            <input type="checkbox" id="aficiones" name="aficiones" value="musica">
+            <label for="musica">Musica</label><br>
+
+            <input type="checkbox" id="aficiones" name="aficiones" value="television">
+            <label for="television">Television</label><br>
+
+            <!-- BOTONES -->
+            <input value="enviar" type="submit">
+            <!-- <button type="submit" name="send" value="delete"> delete </button> -->
+        </table>
+    </form>
+</body>
+</html>

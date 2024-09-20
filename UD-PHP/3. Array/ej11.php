@@ -13,10 +13,25 @@ $nombre = [
     "fco" => "francisco cascales"
 ];
 
-ksort($nombre);
+echo("<h2>Array</h2>");
 
 foreach ($nombre as $nombre_apellido => $valor) {
-    echo("$nombre: $valor <br>");
+    echo("$nombre_apellido: $valor <br>");
+}
+echo("<br>");
+
+echo("<h2>Array ksort</h2>");
+ksort($nombre);
+foreach ($nombre as $nombre_apellido => $valor) {
+    echo("$nombre_apellido: $valor <br>");
+}
+
+echo("<br>");
+
+echo("<h2>Array natsort</h2>");
+natsort($nombre);
+foreach ($nombre as $nombre_apellido => $valor) {
+    echo("$nombre_apellido: $valor <br>");
 }
 
 ?>
