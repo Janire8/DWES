@@ -18,4 +18,8 @@ if (isset($_POST["sexo"])) {
     echo("El valor no se ha seleccionado");
 }
 
+
+$cineIsChecked = $aficiones == 'cine' ? 'checked' : '';
+<input type="radio" ... value="juan" $juanIsChecked />
+
 ?>
