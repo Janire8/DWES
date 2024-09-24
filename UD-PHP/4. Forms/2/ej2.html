@@ -15,7 +15,7 @@
 
             <h4>Escriba los datos siguientes</h4>
             <label for = "nombres">Nombre:</label>
-            Nombre: <input type = "text" name ="nombre" value="janire"><br>
+            Nombre: <input type = "text" name ="nombre"><br>
 
             <label for = "apellidos">Apellidos:</label>
             Apellido: <input type = "text" name ="apellido"><br>
@@ -31,51 +31,51 @@
             <label for = "peso">Peso:</label>
             <input type = "text" name ="peso"><br>
              
-            <!-- CHECKBOX SEXO-->
+            <!-- RADIO SEXO-->
             <label for="sexo">Sexo</label><br>
 
-            <input type="radio" id="sexo" name="sexo" value="hombre">
+            <input type="radio" id="hombre" name="sexo" value="hombre">
             <label for="hombre">Hombre</label><br>
 
-            <input type="radio" id="sexo" name="sexo" value="mujer">
+            <input type="radio" id="mujer" name="sexo" value="mujer">
             <label for="mujer">Mujer</label><br>
 
             <!-- CHECKBOX ESTADO CIVIL -->
             <label for="estadoCivil">Estado civil</label><br>
 
-            <input type="radio" id="estado" name="estado" value="soltero">
+            <input type="radio" id="soltero" name="estado" value="soltero">
             <label for="soltero">Soltero</label><br>
 
-            <input type="radio" id="estado" name="estado" value="casado">
+            <input type="radio" id="casado" name="estado" value="casado">
             <label for="casado">Casado</label><br>
             
-            <input type="radio" id="estado" name="estado" value="otro">
+            <input type="radio" id="otro" name="estado" value="otro">
             <label for="otro">Otro</label><br>
             
             <!-- AFICIONES -->
             <label for="aficiones">Aficiones: </label><br>
 
-            <input type="checkbox" id="aficiones" name="aficiones" value="cine">
+            <input type="checkbox" id="aficiones" name="aficiones[]" value="cine">
             <label for="cine">Cine</label><br>
 
-            <input type="checkbox" id="aficiones" name="aficiones" value="literatura">
+            <input type="checkbox" id="aficiones" name="aficiones[]" value="literatura">
             <label for="literatura">Literatura</label><br>
 
-            <input type="checkbox" id="aficiones" name="aficiones" value="tebeos">
+            <input type="checkbox" id="aficiones" name="aficiones[]" value="tebeos">
             <label for="tebeos">Tebeos</label><br>
 
-            <input type="checkbox" id="aficiones" name="aficiones" value="deporte">
+            <input type="checkbox" id="aficiones" name="aficiones[]" value="deporte">
             <label for="deporte">Deporte</label><br>
 
-            <input type="checkbox" id="aficiones" name="aficiones" value="musica">
+            <input type="checkbox" id="aficiones" name="aficiones[]" value="musica">
             <label for="musica">Musica</label><br>
 
-            <input type="checkbox" id="aficiones" name="aficiones" value="television">
+            <input type="checkbox" id="aficiones" name="aficiones[]" value="television">
             <label for="television">Television</label><br>
 
             <!-- BOTONES -->
             <input value="enviar" type="submit">
-            <!-- <button type="submit" name="send" value="delete"> delete </button> -->
+            <input value="borrar" type="reset">
         </table>
     </form>
 </body>
