@@ -46,7 +46,7 @@
                         }
                         ?></td>
                     <td>
-                        <a href="#" class="btn btn-info btn-sm">Ver</a>
+                        <a href='verDatos_caballeros.php?id=<?= $row["id"] ?>' class="btn btn-info btn-sm">Ver</a>
 
                         <a href='update_form_caballeros.php?id=<?= $row["id"] ?>' class="btn btn-warning btn-sm">Modificar</a>
 
