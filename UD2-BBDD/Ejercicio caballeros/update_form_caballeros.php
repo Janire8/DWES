@@ -20,8 +20,10 @@ $mysqli->close();
 
 <body>
     <form action="update_caballeros.php">
-        <input type="text" name="id" placeholder="id" value="<?=$caballero['id']?>" readonly>
-        <input type="text" name="nombre" placeholder="nombre"  value="<?=$caballero['nombre']?>">
+        <label><b>ID:</b></label>
+        <input type="text" name="id" placeholder="id" value="<?=$caballero['id']?>" readonly><br>
+        <label><b>Nombre:</b></label>
+        <input type="text" name="nombre" placeholder="nombre"  value="<?=$caballero['nombre']?>"><br><br>
         <input type="submit" value="Guardar">
     </form>
 </body>
