@@ -1,5 +1,6 @@
 <?php 
-class Personaje {
+
+class Personaje{
 
     public $nombre;
     public $puntosDeVida;
@@ -12,15 +13,13 @@ class Personaje {
         $this->fuerza = $fuerza;
         
     }
+
+    //abstract function moverse();
 }
 
 $personaje1 = new Personaje("Mario", 12, 5);
 var_dump($personaje1->nombre);
 var_dump($personaje1->puntosDeVida);
 var_dump($personaje1->fuerza);
-
-class mario extends personaje {
-
-}
 
 ?>
