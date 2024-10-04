@@ -1,16 +1,12 @@
 <?php
 include("Personaje.php");
 
-class Enemigo extends Personaje
+abstract class Enemigo extends Personaje
 {
-    public $poder;
+    private int $poder;
 
-    public function __construct($nombre, $puntosDeVida, $fuerza, $poder)
-    {
-        parent::__construct($nombre, $puntosDeVida, $fuerza);
-        $this->poder = $poder;
-
-    } 
-        
     
+    public abstract function moverse();
+
+    public abstract function atacar(int $strength);
 }

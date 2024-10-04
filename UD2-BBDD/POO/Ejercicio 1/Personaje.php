@@ -1,10 +1,10 @@
 <?php 
 
-class Personaje{
+abstract class Personaje{
 
-    public $nombre;
-    public $puntosDeVida;
-    public $fuerza;
+    protected string $nombre;
+    protected int $puntosDeVida;
+    protected int $fuerza;
 
     public function __construct($nombre, $puntosDeVida, $fuerza) {
 
@@ -14,12 +14,11 @@ class Personaje{
         
     }
 
-    //abstract function moverse();
+    protected abstract function moverse();
+    protected abstract function atacar(int $strength);
+    protected function recibirDano (int $dano){}
 }
 
-$personaje1 = new Personaje("Mario", 12, 5);
-var_dump($personaje1->nombre);
-var_dump($personaje1->puntosDeVida);
-var_dump($personaje1->fuerza);
+
 
 ?>
