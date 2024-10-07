@@ -1,6 +1,6 @@
 <?php
-include "Enemigo.php";
-
+include_once ("Enemigo.php"
+);
 class Koopa extends Enemigo {
     private bool $esCaparazonVerde = true;
 

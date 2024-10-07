@@ -1,7 +1,7 @@
 <?php
-include "Personaje.php";
-include "saltar.php";
-include "Koopa.php";
+include_once ("Personaje.php");
+include_once ("saltar.php");
+include_once ("Koopa.php");
 
 class Mario extends Personaje implements saltar{
     private $habilidadEspecial;
@@ -17,13 +17,11 @@ class Mario extends Personaje implements saltar{
         echo $this->nombre . " se mueve";
     }
 
-    public function atacar(int $strength)
-    {
-        echo "ataca sobre " . $this->nombre;
+    public function atacar(int $fuerza){
+        echo "ataca sobre enemigo con fuerza $fuerza"  ;
     }
 
-    public function salto()
-    {
+    public function salto(){
         echo "El personaje salta";
     }
 }

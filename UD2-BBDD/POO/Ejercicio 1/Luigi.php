@@ -1,4 +1,6 @@
 <?php
+include_once ("Personaje.php");
+
 class Luigi extends Personaje implements saltar{
     private int $agilidad;
 
@@ -10,7 +12,7 @@ class Luigi extends Personaje implements saltar{
     }
     
     public function moverse() {
-        echo ("Luigi se mueve");
+        echo ("Luigi se mueve con " . $this->agilidad);
     }
 
     public function atacar(int $strength)
@@ -20,7 +22,7 @@ class Luigi extends Personaje implements saltar{
 
     public function salto()
     {
-        
+        echo "salta con mayor altura";
     }
 }
 
