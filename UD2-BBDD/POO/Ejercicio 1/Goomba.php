@@ -5,12 +5,12 @@ class Goomba extends Personaje {
 
     
     public function moverse() {
-        echo ("Goomba se mueve");
+        echo ("Goomba camina en linea recta");
     }
 
     public function atacar(int $strength)
     {
-        
+        echo ("Goomba ataca con fuerza" . $strength);
     }
 
 }

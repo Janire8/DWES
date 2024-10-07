@@ -2,7 +2,7 @@
 include_once ("Personaje.php");
 
 class Luigi extends Personaje implements saltar{
-    private int $agilidad;
+    private string $agilidad;
 
     public function __construct($nombre, $puntosDeVida, $fuerza, $agilidadL) {
 
